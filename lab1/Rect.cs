@@ -15,17 +15,12 @@
             BottomRight = new Vector2(x2, y2);
         }
 
-        public Vector2[] GetAllPoints()
+        public void Rotate(Vector2 point, float angle)
         {
-            return new[] {TopLeft, TopRight, BottomLeft, BottomRight};
-        }
-
-        public void SetAllPoints(Vector2[] points)
-        {
-            TopLeft = points[0];
-            TopRight = points[1];
-            BottomLeft = points[2];
-            BottomRight = points[3];
+            TopLeft.RotateAround(point, angle);
+            TopRight.RotateAround(point, angle);
+            BottomLeft.RotateAround(point, angle);
+            BottomRight.RotateAround(point, angle);
         }
     }
 }

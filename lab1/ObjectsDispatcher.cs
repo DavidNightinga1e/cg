@@ -27,13 +27,6 @@ namespace lab1
             return image;
         }
 
-        public void RotateCube(float angle)
-        {
-            var cubePoints = Rectangle.GetAllPoints();
-            for (var i = 0; i < cubePoints.Length; i++)
-                cubePoints[i].RotateAround(RotationPoint, angle);
-
-            Rectangle.SetAllPoints(cubePoints);
-        }
+        public void RotateRectangle(float angle) => Rectangle.Rotate(RotationPoint, angle);
     }
 }

@@ -29,13 +29,13 @@ namespace lab1
         private void RotateRightButton_Click(object sender, EventArgs e)
         {
             var angle = (float) AngleSetupUpDown.Value;
-            _objectsDispatcher.RotateCube(angle);
+            _objectsDispatcher.RotateRectangle(angle);
         }
 
         private void RotateLeftButton_Click(object sender, EventArgs e)
         {
             var angle = (float) AngleSetupUpDown.Value;
-            _objectsDispatcher.RotateCube(-angle);
+            _objectsDispatcher.RotateRectangle(-angle);
         }
     }
 }
