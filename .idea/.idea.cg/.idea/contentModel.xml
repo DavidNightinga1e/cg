@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Nightingale\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Nightingale\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_cg.1343259977.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Nightingale\RiderProjects\cg" t="IncludeFlat">
+      <e p="cg.sln" t="IncludeFlat" />
+      <e p="lab1" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ExtGraphics.cs" t="Include" />
+        <e p="Form1.cs" t="Include" />
+        <e p="Form1.Designer.cs" t="Include" />
+        <e p="Form1.resx" t="Include" />
+        <e p="lab1.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="ObjectsDispatcher.cs" t="Include" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="Rect.cs" t="Include" />
+        <e p="Vector2.cs" t="Include" />
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
