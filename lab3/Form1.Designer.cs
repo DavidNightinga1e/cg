@@ -91,7 +91,7 @@
             // 
             // ButtonRotateRight
             // 
-            this.ButtonRotateRight.Location = new System.Drawing.Point(473, 186);
+            this.ButtonRotateRight.Location = new System.Drawing.Point(472, 186);
             this.ButtonRotateRight.Name = "ButtonRotateRight";
             this.ButtonRotateRight.Size = new System.Drawing.Size(23, 23);
             this.ButtonRotateRight.TabIndex = 5;
@@ -107,7 +107,7 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(405, 131);
+            this.label1.Location = new System.Drawing.Point(405, 132);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 23);
             this.label1.TabIndex = 6;
