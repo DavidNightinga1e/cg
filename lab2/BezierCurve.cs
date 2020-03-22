@@ -21,7 +21,7 @@ namespace lab2
 
             float current = 0;
 
-            while (current + step <= 1)
+            while (current + step <= 1 - step)
             {
                 var p1 = getPointOnCurve(current);
                 var p2 = getPointOnCurve(current + step);
@@ -34,15 +34,17 @@ namespace lab2
 
         public Vector2 getPointOnCurve(float t)
         {
-            if (t < 0 || t > 1) return new Vector2(0, 0);
+            if (t < 0 || t > 1) 
+                throw new Exception("t c [0; 1]");
 
             var result = new Vector2(0, 0);
-            for (int i = 1; i <= Points.Count; i++)
+            var n = Points.Count - 1;
+            for (int k = 0; k <= n; k++)
             {
-                var combinations = MathExt.Combinations(Points.Count - 1, i - 1);
-                var pow = Math.Pow(1 - t, Points.Count - i);
-                var point = Points[i - 1];
-                var pow2 = Math.Pow(t, i - 1);
+                var combinations = MathExt.Combinations(n, k);
+                var pow = Math.Pow(1 - t, n - k);
+                var point = Points[k];
+                var pow2 = Math.Pow(t, k);
                 result += pow * 
                           point * pow2 *
                           combinations;

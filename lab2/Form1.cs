@@ -25,8 +25,11 @@ namespace lab2
         {
             var mouseEventArgs = (MouseEventArgs) e;
             var position = mouseEventArgs.Location;
-            
-            _objectDispatcher.AddPoint(new Vector2(position.X, position.Y));
+
+            if (_objectDispatcher.BrokenCurve.Points.Count < 21)
+                _objectDispatcher.AddPoint(new Vector2(position.X, position.Y));
+            else
+                MessageBox.Show("Степень кривой выше 20 не поддерживается", "Ошибка", MessageBoxButtons.OK);
         }
 
         private void Timer_Tick(object sender, EventArgs e)

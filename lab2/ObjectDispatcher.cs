@@ -9,13 +9,13 @@ namespace lab2
         public Pen PenBrokenCurve = Pens.Navy;
         public Pen PenBezierCurve = Pens.Lime;
 
-        private readonly BrokenCurve _brokenCurve;
+        public BrokenCurve BrokenCurve { get; }
         private readonly BezierCurve _bezierCurve;
 
         public ObjectDispatcher()
         {
             _bezierCurve = new BezierCurve();
-            _brokenCurve = new BrokenCurve();
+            BrokenCurve = new BrokenCurve();
         }
 
         public Image GetRender()
@@ -25,7 +25,7 @@ namespace lab2
             {
                 graphics.SmoothingMode = SmoothingMode.HighQuality;
                 
-                _brokenCurve.Render(graphics, PenBrokenCurve);
+                BrokenCurve.Render(graphics, PenBrokenCurve);
                 _bezierCurve.Render(graphics, PenBezierCurve, 0.001f);
             }
 
@@ -34,13 +34,13 @@ namespace lab2
 
         public void AddPoint(Vector2 point)
         {
-            _brokenCurve.AddPoint(point);
-            _bezierCurve.Points = new List<Vector2>(_brokenCurve.Points);
+            BrokenCurve.AddPoint(point);
+            _bezierCurve.Points = new List<Vector2>(BrokenCurve.Points);
         }
 
         public void Clear()
         {
-            _brokenCurve.Clear();
+            BrokenCurve.Clear();
             _bezierCurve.Clear();
         }
     }
