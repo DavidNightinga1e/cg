@@ -60,7 +60,7 @@
                 ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Top |
                                                        System.Windows.Forms.AnchorStyles.Right)));
             this.ButtonGenerate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonGenerate.Location = new System.Drawing.Point(441, 41);
+            this.ButtonGenerate.Location = new System.Drawing.Point(441, 42);
             this.ButtonGenerate.Name = "ButtonGenerate";
             this.ButtonGenerate.Size = new System.Drawing.Size(201, 28);
             this.ButtonGenerate.TabIndex = 1;
